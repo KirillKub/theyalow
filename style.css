@@ -333,7 +333,6 @@ aside div div{
 	background: url("assets/Layer10copy3.png");
 	width: 100%;
 	margin-top:-35px;
-	height: 505px;
 }
 
 .sectionText span{
@@ -501,7 +500,7 @@ img[alt="bird"]{
 	background-color: #ec9e03;
 	position: absolute;
 	bottom: 0;
-	right: 503px;
+	right: 450px;
 }
 
 .wrapperSection2{
@@ -509,6 +508,7 @@ img[alt="bird"]{
 	width: 100%;
 	height: 495px;
 	background: url("assets/Layer32.png");
+	margin-top:20px; 
 }
 
 .section2{
@@ -662,4 +662,177 @@ footer{
 
 p{
 	text-indent: 20px;
+}
+
+.none{
+	display: none;
+	margin-top:15px;
+	position: relative;
+	top:2px;
+	left:20px;
+}
+.mobile{
+	width: 276px;
+	height: 42px;
+	border-radius: 10px;
+	background-color: #ffffff;
+	line-height: 0.2;
+}
+
+.wrapperSlider{
+	position: relative;
+	left:48px;
+}
+
+.none input{
+	width: 206px;
+	height: 25px;
+	border-radius: 10px 0 0 10px;
+	background-color: #ffffff;
+	border: 1px solid rgba(0,0,0,0.15);
+}
+
+.none input[type="submit"]{
+	font-size: 15px;
+	color: #ffffff;
+	font-family: "Arial";
+	height: 29px;
+	width: 70px;
+	background: #e1a01e;
+	border-radius:0 10px 10px 0;
+	border: none;
+}
+
+.mobile:nth-child(2){
+	opacity: 0.7;
+}
+
+.mobile:nth-child(3){
+	opacity: 0.6;
+}
+
+@media screen and (max-width:1160px){
+	.textAboutVideo{display: none;}
+	.videoAndText{justify-content: center;}
+}
+
+@media screen and (max-width:1003px){
+	.sectionText{display: none;}
+	.date{display: none;}
+	.wrapperSlider{display: none;}
+	.wrapperMainBox{justify-content: center;}
+	.box:first-child:before,.box:nth-child(2):before,.box:nth-child(3):before,.box:nth-child(3)::after{
+		display: none;
+	}
+	.aside{margin: 0; padding-top:35px;}
+
+}
+
+@media screen and (max-width:960px){
+	.device ~ div{
+		display: none;
+	}
+	.section2box{justify-content: center;}
+}
+
+@media screen and (max-width:840px){
+	.container1{display: none;}
+	.container2{display: none;}
+	.mainNav{width: 455px; height: 60px;}
+	.navItem{line-height: 60px;}
+	.logoText{
+		font-size: 19px;
+		color: #ffffff;
+		font-family: "Lucida Sans";
+		font-style: italic;
+		margin: 0;
+	}
+	.logoImg1, .logoImg2 {transform: scale(0.5);}
+	header{
+		min-width: 640px;
+	}
+	.videoAndText div video{
+		width: 640px;
+	}
+	.videoAndText{margin-top:0;}
+	.logoAndNav{height: 60px;}
+	header{height: auto;}
+	.bg{height: 385px;}
+	.s{display: none;}
+	.mainNav{margin: 0;}
+	.logoAndNav{align-items: flex-start; justify-content: space-between;}
+	.logo{margin: 0;position: relative; bottom: 10px; right: 10px;}
+	.logoText{left: auto; position: relative; top:1px; right: 5px;}
+	.wrapperSection2{height: 465px;}
+}
+
+@media screen and (max-width:640px){
+	.aside{background: url("assets/white.png");height: 170px; padding: 0; align-items: baseline;}
+	aside{height: 170px;}
+	.aside div div{
+		font-size: 23px;
+		font-weight: 300;
+	}
+	.box img{transform: scale(0.8);}
+	.box:first-child img{right: 16px;top:2px;}
+	.box:nth-child(2) img{top:17px;}
+	.bgtext{width:300px; position: relative; top:10px; right:5px;}
+	.wrapperMain{background: none;}
+	.mainBox div video{position: relative; top:10px; left:5px;}
+	.bird{width: 100%; margin-top:18px; background: #f5c507; justify-content: space-around;}
+	.navItem{position: relative; right: 10px; top:5px;}
+	.box:first-child div{
+		position: relative;
+		left:auto;
+		top:7px;
+		right: 14px;
+	}
+	.box:nth-child(2) div{
+		position: relative;
+		top:5px;
+	}
+	.box:nth-child(3) div{
+		position: relative;
+		top:7px;
+		left:2px;
+	}
+	.none{display: block;}
+	.bird span{
+		position: static;
+		font-size: 13px;
+		color: #8f8e8e;
+		font-family: "Arial";
+		line-height: 18px;
+	}
+	.numb22{display: none;}
+	.shape button{
+		display: none;
+	}
+	.mobile{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.bird img[alt="bird"]{
+		position: relative;
+		left:30px;
+	}
+	.wrapperSection2{
+		margin-top:0;
+	}
+	.device{
+		position: relative;
+		top:22px;
+		right: 10px;
+	}
+	.foot div span{	font-size: 17px;
+		 	letter-spacing: 0px;
+			color: #ffffff;
+			font-family: "Lucida Sans";
+			font-style: italic;
+			text-align: center;
+			padding-left:0;
+	}
+	.foot img {transform: scale(0.6)}
+	.foot{position: relative; left:54px; bottom: 12px; }
 }
